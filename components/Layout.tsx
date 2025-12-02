@@ -19,16 +19,12 @@ export const Layout: React.FC<LayoutProps> = ({
       {/* Sidebar */}
       <aside className="w-64 bg-slate-900 text-slate-300 flex flex-col shrink-0 transition-all duration-300 relative z-40">
         <div className="h-20 flex items-center px-6 border-b border-slate-800">
-          {/* Brand Logo */}
-          <div className="flex flex-col w-10 h-10 rounded overflow-hidden shadow-lg mr-4 shrink-0">
-            <div className="flex-1 bg-brand-500 flex items-center justify-center relative">
-               <div className="w-3 h-3 border-[3px] border-white border-r-transparent rounded-full -rotate-45 -mr-1"></div>
-               <div className="w-3 h-3 border-[3px] border-white border-r-transparent rounded-full rotate-[135deg] -ml-1"></div>
-            </div>
-            <div className="h-3.5 bg-slate-950 flex items-center justify-center">
-              <span className="text-white text-[8px] font-black tracking-widest leading-none">CHUYI</span>
-            </div>
-          </div>
+          {/* Brand Logo - Image Replacement */}
+          <img 
+            src="/logo.png" 
+            alt="Logo" 
+            className="w-10 h-10 object-contain mr-4 shrink-0 bg-white rounded-md p-1"
+          />
           <div>
             <h1 className="font-bold text-white text-lg tracking-tight leading-tight">Chuyi System</h1>
             <div className="text-[11px] text-slate-500 font-medium">Project Management</div>

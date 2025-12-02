@@ -98,14 +98,9 @@ function App() {
         <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in duration-300">
           <div className="bg-brand-600 p-8 text-center relative overflow-hidden">
              <div className="relative z-10 flex flex-col items-center">
-                 <div className="w-16 h-16 mb-4 shadow-lg scale-125 bg-white rounded-md flex flex-col overflow-hidden">
-                    <div className="flex-1 bg-brand-500 flex items-center justify-center">
-                       <div className="w-4 h-4 border-[4px] border-white border-r-transparent rounded-full -rotate-45 -mr-1"></div>
-                       <div className="w-4 h-4 border-[4px] border-white border-r-transparent rounded-full rotate-[135deg] -ml-1"></div>
-                    </div>
-                    <div className="h-5 bg-slate-950 flex items-center justify-center">
-                      <span className="text-white text-[10px] font-black tracking-widest leading-none">CHUYI</span>
-                    </div>
+                 {/* Logo Replacement */}
+                 <div className="w-24 h-24 mb-4 bg-white rounded-xl shadow-lg flex items-center justify-center p-2">
+                    <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
                  </div>
                  <h1 className="text-2xl font-bold text-white tracking-wide">Chuyi System</h1>
                  <p className="text-brand-100 text-sm mt-2 font-medium">制宜電測專案管理系統</p>
