@@ -29,9 +29,13 @@ function App() {
         setProjects(data.projects);
         setLogs(data.logs);
         setAdminPassword(data.adminPassword);
-        setIsOnline((typeof window !== 'undefined' && (window as any).google && (window as any).google.script));
+        // Updated: Since we are using fetch API on Vercel, successful load means we are online
+        setIsOnline(true);
       })
-      .catch(err => console.error("Load failed", err))
+      .catch(err => {
+        console.error("Load failed", err);
+        setIsOnline(false);
+      })
       .finally(() => setIsLoading(false));
   }, []);
 

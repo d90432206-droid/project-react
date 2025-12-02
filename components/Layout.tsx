@@ -73,7 +73,7 @@ export const Layout: React.FC<LayoutProps> = ({
         <div className="p-6 border-t border-slate-800 bg-slate-950/30">
           <div className="flex items-center gap-2 mb-3">
             <div className={`w-3 h-3 rounded-full animate-pulse shadow-[0_0_8px_rgba(0,0,0,0.5)] ${isOnline ? 'bg-emerald-500 shadow-emerald-500/50' : 'bg-amber-500 shadow-amber-500/50'}`}></div>
-            <span className="font-bold text-sm text-slate-200">{isOnline ? 'Google Sheet DB 連線' : '本機測試模式'}</span>
+            <span className="font-bold text-sm text-slate-200">{isOnline ? 'Google Sheet DB 連線中' : '本機測試模式'}</span>
           </div>
           {isLoading && (
             <p className="text-brand-400 text-xs font-medium animate-pulse mb-3">
